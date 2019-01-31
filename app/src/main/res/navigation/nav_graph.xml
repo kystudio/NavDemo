@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.kystudio.navdemo.MainFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_main_to_sub1"
+            app:destination="@id/sub1"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_main_to_sub2"
+            app:destination="@id/sub2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sub1"
+        android:name="com.kystudio.navdemo.Sub1Fragment"
+        android:label="@string/title_sub1"
+        tools:layout="@layout/fragment_sub1">
+        <action
+            android:id="@+id/action_sub1_to_sub3"
+            app:destination="@id/sub3"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sub2"
+        android:name="com.kystudio.navdemo.Sub2Fragment"
+        android:label="@string/title_sub2"
+        tools:layout="@layout/fragment_sub2">
+        <action
+            android:id="@+id/action_sub2_to_sub3"
+            app:destination="@id/sub3"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sub3"
+        android:name="com.kystudio.navdemo.Sub3Fragment"
+        android:label="@string/title_sub3"
+        tools:layout="@layout/fragment_sub3" />
+</navigation>
