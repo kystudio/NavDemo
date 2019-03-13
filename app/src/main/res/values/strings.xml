@@ -11,6 +11,8 @@
     <string name="title_sub1">Sub1</string>
     <string name="title_sub2">Sub2</string>
     <string name="title_sub3">Sub3</string>
+    <string name="to_sub1">Goto Sub1</string>
+    <string name="to_sub2">Goto Sub2</string>
     <string name="to_sub3">Goto Sub3</string>
     <string name="communicate">Communicate</string>
     <string name="share">Share</string>

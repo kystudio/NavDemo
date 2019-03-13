@@ -5,12 +5,6 @@
         <item
             android:id="@+id/main"
             android:title="@string/title_main" />
-        <item
-            android:id="@+id/sub1"
-            android:title="@string/title_sub1" />
-        <item
-            android:id="@+id/sub2"
-            android:title="@string/title_sub2" />
     </group>
 
     <item android:title="@string/communicate">

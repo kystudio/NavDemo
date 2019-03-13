@@ -58,5 +58,10 @@
         android:id="@+id/sub3"
         android:name="com.kystudio.navdemo.Sub3Fragment"
         android:label="@string/title_sub3"
-        tools:layout="@layout/fragment_sub3" />
+        tools:layout="@layout/fragment_sub3">
+
+        <argument
+            android:name="come_from"
+            app:argType="string" />
+    </fragment>
 </navigation>
